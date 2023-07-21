@@ -12,10 +12,8 @@ const HandleInput=(e)=>{
 
 }
 const AddTask=()=>{
-// if(newTask.trim() !==''){
   setTaskAdd([...taskAdd,{text:newTask,complete:false,id:Date.now()}])
   setNewTask('');
-// }
 }
 const HandleDelete=(taskId)=>{
   const UpdateTask=taskAdd.filter((taskIs)=>taskIs.id != taskId)
